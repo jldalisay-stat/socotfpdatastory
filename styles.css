@@ -7,17 +7,16 @@ body {
 
 /* This ensures the section takes the full viewport height and width */
 .content-section {
-    width: 100vw;
-    height: 100vh;
+    height: 100vh; /* This makes it cover the entire viewport height */
     display: flex;
-    justify-content: center;  /* horizontally centers the content */
-    align-items: center;      /* vertically centers the content */
-    position: relative;       /* to position child elements relative to this */
+    flex-direction: column;
+    justify-content: center; /* This centers the content vertically */
+    align-items: center; /* This centers the content horizontally */
 }
 
 /* Styling for the title and subtitle for aesthetic reasons */
 .title {
-    font-size: 2em;
+    font-size: 5em;
     text-align: center;
 }
 
