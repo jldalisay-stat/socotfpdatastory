@@ -18,7 +18,15 @@ body, html {
     justify-content: center;
     align-items: center;
 }
-
+/* Styling for the title and subtitle for aesthetic reasons */
+.title {
+    font-size: 5em;
+}
+.landing-page-inner {
+    text-align: center;
+    max-width: 80%; /* Optional: Adjusts the max width of the content */
+    margin: 0 auto; /* Centers the inner content if max-width is set */
+}
 .landing-page-inner {
     text-align: center;
     max-width: 80%; /* Optional: Adjusts the max width of the content */
