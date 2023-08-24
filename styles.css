@@ -38,6 +38,7 @@ body {
     display: inline-block; /* Make the icon a block-level element */
     margin-left: auto; /* Automatic left margin */
     margin-right: auto; /* Automatic right margin */
+	text-align: center;
 }
 
 /* Bounce animation for the scroll icon */
