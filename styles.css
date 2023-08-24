@@ -100,6 +100,17 @@ h1, h2 {
     border: 2px solid white;
 }
 
+.sticky-section {
+    position: relative;
+    z-index: 1;
+}
+
+.sticky-content {
+    position: sticky;
+    top: 0;
+    z-index: 2;
+}
+
 .highlighted-text span {
     color: yellow;
 }
