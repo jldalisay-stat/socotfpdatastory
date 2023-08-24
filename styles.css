@@ -1,0 +1,45 @@
+
+body {
+    background-color: black;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+.content-section {
+    text-align: center;
+    margin: 50px 0;
+    padding: 50px;
+}
+
+.left-content {
+    text-align: left;
+    margin-left: 10%;
+}
+
+h1, h2 {
+    font-size: 2em;
+}
+
+.info-box {
+    margin-top: 20px;
+    padding: 10px;
+    border: 2px solid white;
+}
+
+.highlighted-text span {
+    color: yellow;
+}
+
+.chart-section {
+    position: relative;
+}
+
+.chart-note {
+    position: absolute;
+    right: 10%;
+    color: yellow;
+}
+
+.chart-note span {
+    color: white;
+}
