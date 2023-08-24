@@ -27,11 +27,6 @@ body, html {
     max-width: 80%; /* Optional: Adjusts the max width of the content */
     margin: 0 auto; /* Centers the inner content if max-width is set */
 }
-.landing-page-inner {
-    text-align: center;
-    max-width: 80%; /* Optional: Adjusts the max width of the content */
-    margin: 0 auto; /* Centers the inner content if max-width is set */
-}
 
 .title-bar {
     width: 50%; /* Adjusts the width of the horizontal rule */
