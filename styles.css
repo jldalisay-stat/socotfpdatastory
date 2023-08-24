@@ -34,8 +34,10 @@ body {
     justify-content: center;
     text-align: center;
     max-width: 80%;
-    margin: 0 auto;
+    margin: auto;
     height: 100%;
+    margin-left: auto; /* Automatic left margin */
+    margin-right: auto; /* Automatic right margin */
 }
 
 .scroll-icon {
