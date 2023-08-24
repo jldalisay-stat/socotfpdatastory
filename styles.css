@@ -5,10 +5,31 @@ body {
     font-family: Arial, sans-serif;
 }
 
+/* This ensures the section takes the full viewport height and width */
 .content-section {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;  /* horizontally centers the content */
+    align-items: center;      /* vertically centers the content */
+    position: relative;       /* to position child elements relative to this */
+}
+
+/* Styling for the title and subtitle for aesthetic reasons */
+.title {
+    font-size: 2em;
     text-align: center;
-    margin: 50px 0;
-    padding: 50px;
+}
+
+.title-bar {
+    width: 60%;  /* you can adjust this as needed */
+    margin: 15px auto;  /* centers the hr and gives it top and bottom margin */
+}
+
+.subtitle {
+    font-size: 1.5em;
+    text-align: center;
+    padding-top: 10px;
 }
 
 .left-content {
