@@ -19,6 +19,7 @@ body {
     flex-direction: column;
     justify-content: center; /* This centers the content vertically */
     align-items: center; /* This centers the content horizontally */
+	position: relative;
 }
 
 /* Styling for the title and subtitle for aesthetic reasons */
@@ -83,8 +84,10 @@ body {
 }
 
 .left-content {
-    text-align: left;
-    margin-left: 10%;
+    position: -webkit-sticky; /* for Safari */
+    position: sticky;
+    top: 0;
+    align-self: flex-start; /* to ensure it sticks to the top of its container */
 }
 
 h1, h2 {
