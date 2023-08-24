@@ -28,6 +28,7 @@ body {
     text-align: center;
     max-width: 80%; /* Optional: Adjusts the max width of the content */
     margin: 0 auto; /* Centers the inner content if max-width is set */
+	text-align: center;
 	flex-direction: column;
     justify-content: center; /* This centers the content vertically */
     align-items: center; /* This centers the content horizontally */
