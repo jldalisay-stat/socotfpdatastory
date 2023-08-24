@@ -30,24 +30,11 @@ body {
     margin: 0 auto; /* Centers the inner content if max-width is set */
 }
 
-.title-bar {
-    width: 60%;  /* you can adjust this as needed */
-    margin: 15px auto;  /* centers the hr and gives it top and bottom margin */
-    width: 50%; /* Adjusts the width of the horizontal rule */
-    margin: 20px auto; /* Centers the horizontal rule */
-}
-
-.subtitle {
-    font-size: 1.5em;
-    text-align: center;
-    padding-top: 10px;
-}
-
 .scroll-icon {
     font-size: 2em; /* Adjust size as needed */
     margin-top: 20px; /* Add some space above the icon */
     animation: bounce 1s infinite; /* Add a simple bounce animation */
-    display: block; /* Make the icon a block-level element */
+    display: inline-block; /* Make the icon a block-level element */
     margin-left: auto; /* Automatic left margin */
     margin-right: auto; /* Automatic right margin */
 }
@@ -63,6 +50,19 @@ body {
     60% {
         transform: translateY(-5px);
     }
+}
+
+.title-bar {
+    width: 60%;  /* you can adjust this as needed */
+    margin: 15px auto;  /* centers the hr and gives it top and bottom margin */
+    width: 50%; /* Adjusts the width of the horizontal rule */
+    margin: 20px auto; /* Centers the horizontal rule */
+}
+
+.subtitle {
+    font-size: 1.5em;
+    text-align: center;
+    padding-top: 10px;
 }
 
 .left-content {
