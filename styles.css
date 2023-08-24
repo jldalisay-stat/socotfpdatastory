@@ -44,9 +44,14 @@ body {
 }
 
 .scroll-icon {
-    font-size: 2em; /* Adjust size as needed */
-    margin-top: 20px; /* Add some space above the icon */
-    animation: bounce 1s infinite; /* Add a simple bounce animation */
+    font-size: 2em;
+    margin-top: 20px;
+    animation: bounce 1s infinite;
+    display: block;       /* Make the icon a block element */
+    margin-left: auto;    /* Auto margin on left */
+    margin-right: auto;   /* Auto margin on right */
+    width: 2em;           /* Set a width for the icon */
+    text-align: center;   /* Center the text/icon inside */
 }
 
 /* Bounce animation for the scroll icon */
