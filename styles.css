@@ -17,7 +17,7 @@ body {
 
 /* Styling for the title and subtitle for aesthetic reasons */
 .title {
-    font-size: 2em;
+    font-size: 5em;
     text-align: center;
 }
 
@@ -35,10 +35,6 @@ body {
 .left-content {
     text-align: left;
     margin-left: 10%;
-}
-
-h1, h2 {
-    font-size: 2em;
 }
 
 .info-box {
