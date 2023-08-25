@@ -128,3 +128,71 @@ h1, h2 {
 .chart-note span {
     color: white;
 }
+.section {
+    display: block;
+    position: relative
+}
+
+.narration_list {
+    margin-top: calc(3.8rem - 100vh);
+    z-index: 999;
+    -webkit-transform: translate3d(0, 0, 0);
+    pointer-events: none
+}
+
+@supports(--css: variables) {
+    .narration_list {
+        margin-top:calc(3.8rem - var(--vh, 1vh) * 100)
+    }
+}
+
+.narration {
+    max-width: 75%
+}
+
+.narration .narration-content {
+    background-color: rgba(255,255,255,.925);
+    border-radius: 3px;
+    -webkit-box-shadow: 0 6px 12px rgba(0,0,0,.09),0 2px 4px rgba(0,0,0,.12);
+    box-shadow: 0 6px 12px rgba(0,0,0,.09),0 2px 4px rgba(0,0,0,.12);
+    border-left: 5.5px solid #55e7b0;
+    padding: 3%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    overflow: hidden;
+    pointer-events: all
+}
+
+.narration .narration-content:empty {
+    display: none
+}
+
+.narration p,.narration .link {
+    padding-top: .5rem;
+    padding-right: 10%
+}
+
+.narration {
+    text-align: left;
+    color: #012b53;
+    margin: 1rem 10% 1rem 10%;
+    padding: .5rem 0 .5rem 0
+}
+
+.border-rect-fill {
+    border: 0;
+    border-radius: 6px;
+    padding: 6px 3px 2px 4px;
+    white-space: nowrap
+}
+
+.narration p {
+    font-size: 1.7rem;
+    line-height: 2.4rem
+}
+
+.narration-content .link a,.narration-content .link a:hover {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex
+}
