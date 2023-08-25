@@ -128,6 +128,1243 @@ h1, h2 {
 .chart-note span {
     color: white;
 }
+.progress-container {
+    background: #ccc;
+    width: 100%
+}
+
+.progress-bar {
+    display: none;
+    position: fixed;
+    right: 0;
+    background: #55e7b0;
+    height: 0;
+    width: 6px;
+    z-index: 9;
+    border-radius: 0 0 3px 3px
+}
+
+@media only screen and (min-width: 48em) {
+    .progress-bar {
+        width:6px
+    }
+}
+
+body::-webkit-scrollbar,body::-webkit-scrollbar-thumb,html::-webkit-scrollbar,html::-webkit-scrollbar-thumb {
+    display: none;
+    scrollbar-width: none
+}
+
+.stripe-green-bar:not(:empty):before {
+    width: 75%;
+    height: 6px;
+    background-image: repeating-linear-gradient(-55deg, transparent, transparent 3px, #009893 3px, #009893 5px),-webkit-gradient(linear, left top, right top, from(transparent), to(transparent));
+    background-image: repeating-linear-gradient(-55deg, transparent, transparent 3px, #009893 3px, #009893 5px),linear-gradient(to right, transparent 0%, transparent 100%);
+    -webkit-mask-image: linear-gradient(to right, rgba(0, 0, 0, 0) 1px, rgb(0, 0, 0) 0%, rgba(0, 0, 0, 0) 100%);
+    mask-image: linear-gradient(to right, rgba(0, 0, 0, 0) 1px, rgb(0, 0, 0) 0%, rgba(0, 0, 0, 0) 100%);
+    content: "";
+    position: absolute;
+    top: 0
+}
+
+#section_chapter {
+    background-color: rgba(0,0,0,0)
+}
+
+#section_chapter_icon div.narration,#section_chapter_icon div.narration.active,#section_chapter_number div.narration,#section_chapter_number div.narration.active {
+    opacity: 0
+}
+
+#graph_chapter_icon,#graph_chapter_number {
+    height: auto !important;
+    margin: auto;
+    max-width: 800px
+}
+
+#graph_chapter_number {
+    padding: 5% 5% 10% 5%
+}
+
+#graph_chapter_icon {
+    padding: 5% 5% 10% 5%
+}
+
+img#child-concentric {
+    display: block;
+    height: auto;
+    margin: 10% auto;
+    width: 40%;
+    max-width: 250px
+}
+
+.chapter-content {
+    height: 100%
+}
+
+#section_chapter_number .narration-title,#section_chapter_number .narration-subtitle,#section_chapter_icon .narration-title,#section_chapter_icon .narration-subtitle {
+    color: #fff;
+    text-align: center;
+    text-shadow: .5px .5px 4px #281612
+}
+
+#section_chapter_number .narration-title,#section_chapter_icon .narration-title {
+    font-size: 4rem;
+    line-height: 4.8rem;
+    font-weight: 700
+}
+
+#section_chapter_number .narration-subtitle,#section_chapter_icon .narration-subtitle {
+    font-family: "AvenirNextLTProRegular",sans-serif,sans-serif;
+    font-size: 2.75rem;
+    line-height: 3.3rem;
+    font-weight: 400
+}
+
+@media only screen and (min-width: 48em) {
+    #section_chapter_number .narration-title,#section_chapter_icon .narration-title {
+        font-size:5rem;
+        line-height: 6rem
+    }
+
+    #section_chapter_number .narration-subtitle,#section_chapter_icon .narration-subtitle {
+        font-size: 3.75rem;
+        line-height: 4.5rem
+    }
+}
+
+@media only screen and (min-width: 75em) {
+    #section_chapter_number .narration-title,#section_chapter_icon .narration-title {
+        font-size:6.5rem;
+        line-height: 7.8rem
+    }
+
+    #section_chapter_number .narration-subtitle,#section_chapter_icon .narration-subtitle {
+        font-size: 4.75rem;
+        line-height: 5.7rem
+    }
+}
+
+#text-highlight {
+    color: #55e7b0
+}
+
+#section_chapter_number g.lines path {
+    stroke-width: 6px
+}
+
+.stripe-green-bar:not(:empty):before {
+    width: 75%;
+    height: 6px;
+    background-image: repeating-linear-gradient(-55deg, transparent, transparent 3px, #009893 3px, #009893 5px),-webkit-gradient(linear, left top, right top, from(transparent), to(transparent));
+    background-image: repeating-linear-gradient(-55deg, transparent, transparent 3px, #009893 3px, #009893 5px),linear-gradient(to right, transparent 0%, transparent 100%);
+    -webkit-mask-image: linear-gradient(to right, rgba(0, 0, 0, 0) 1px, rgb(0, 0, 0) 0%, rgba(0, 0, 0, 0) 100%);
+    mask-image: linear-gradient(to right, rgba(0, 0, 0, 0) 1px, rgb(0, 0, 0) 0%, rgba(0, 0, 0, 0) 100%);
+    content: "";
+    position: absolute;
+    top: 0
+}
+
+.border-rect {
+    border: 2px;
+    border-style: solid;
+    border-radius: 6px;
+    padding: 4px 3px 2px 3px;
+    white-space: nowrap
+}
+
+#graph_line_chart_container {
+    background-color: #fff;
+    opacity: 0
+}
+
+#section_line_chart {
+    background-color: #fff
+}
+
+.scroll-area .scroll .section .graph_container #graph_line_chart svg .title-group,.scroll-area .scroll .section .graph_container.active #graph_line_chart svg .title-group {
+    text-anchor: middle;
+    dominant-baseline: middle;
+    fill: #6d6e71;
+    text-align: center;
+    font-weight: 300;
+    font-family: "AvenirNextLTProMedium";
+    font-size: 2rem;
+    margin: 10px 5% 0 5%
+}
+
+.scroll-area .scroll .section .graph_container #graph_line_chart svg g.plot g.lines path,.scroll-area .scroll .section .graph_container.active #graph_line_chart svg g.plot g.lines path {
+    stroke-width: 6px
+}
+
+.scroll-area .scroll .section .graph_container #graph_line_chart svg g.plot g.labels g.label rect,.scroll-area .scroll .section .graph_container.active #graph_line_chart svg g.plot g.labels g.label rect {
+    border: 3px;
+    border-style: solid;
+    border-radius: 6px;
+    padding: 1px 5px 1px 5px;
+    white-space: nowrap
+}
+
+.scroll-area .scroll .section .graph_container #graph_line_chart svg g.footnotes text.footnote,.scroll-area .scroll .section .graph_container.active #graph_line_chart svg g.footnotes text.footnote {
+    font-size: .8rem;
+    text-anchor: middle;
+    dominant-baseline: middle
+}
+
+#section_line_chart g.tick text {
+    font-size: 1.4em
+}
+
+#section_line_chart g.labels g.label text {
+    font-size: 1.5rem
+}
+
+@media only screen and (max-width: 48em) {
+    #section_line_chart g.labels g.label text {
+        font-size:1.2rem
+    }
+
+    #section_line_chart g.tick text {
+        font-size: 1.2em
+    }
+}
+
+.scroll-area .scroll .section.narration_no_graph {
+    height: 100vh;
+    background: none;
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr
+}
+
+.scroll-area .scroll .section.narration_no_graph .narration_list .narration .narration-content,.scroll-area .scroll .section.narration_no_graph .narration_list .narration.active .narration-content {
+    padding: 5%;
+    border-radius: 6px;
+    background: rgba(255,255,255,.7);
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center
+}
+
+.scroll-area .scroll .section.narration_no_graph .narration_list .narration .narration-content p,.scroll-area .scroll .section.narration_no_graph .narration_list .narration.active .narration-content p {
+    padding-right: 0
+}
+
+.scroll-area .scroll .section.narration_no_graph .narration_list .narration .narration-content p img,.scroll-area .scroll .section.narration_no_graph .narration_list .narration.active .narration-content p img {
+    border-radius: 5px;
+    width: 100%
+}
+
+.scroll-area .scroll .section.narration_no_graph .narration_list .narration .narration-content p ol,.scroll-area .scroll .section.narration_no_graph .narration_list .narration.active .narration-content p ol {
+    list-style: decimal;
+    list-style-position: inside;
+    width: 70%;
+    margin: auto
+}
+
+.scroll-area .scroll .section.narration_no_graph .narration_list .narration .narration-content p ol li,.scroll-area .scroll .section.narration_no_graph .narration_list .narration.active .narration-content p ol li {
+    margin: 1%
+}
+
+.scroll-area .scroll .section.narration_no_graph .narration_list .narration .narration-content:not(:empty):before,.scroll-area .scroll .section.narration_no_graph .narration_list .narration.active .narration-content:not(:empty):before {
+    width: 90%;
+    height: 6px;
+    background-image: repeating-linear-gradient(-55deg, transparent, transparent 3px, #009893 3px, #009893 5px),-webkit-gradient(linear, left top, right top, from(transparent), to(transparent));
+    background-image: repeating-linear-gradient(-55deg, transparent, transparent 3px, #009893 3px, #009893 5px),linear-gradient(to right, transparent 0%, transparent 100%);
+    -webkit-mask-image: linear-gradient(to right, rgba(0, 0, 0, 0) 1px, rgb(0, 0, 0) 50%, rgba(0, 0, 0, 0) 100%);
+    mask-image: linear-gradient(to right, rgba(0, 0, 0, 0) 1px, rgb(0, 0, 0) 50%, rgba(0, 0, 0, 0) 100%);
+    top: auto
+}
+
+.stripe-green-bar:not(:empty):before {
+    width: 75%;
+    height: 6px;
+    background-image: repeating-linear-gradient(-55deg, transparent, transparent 3px, #009893 3px, #009893 5px),-webkit-gradient(linear, left top, right top, from(transparent), to(transparent));
+    background-image: repeating-linear-gradient(-55deg, transparent, transparent 3px, #009893 3px, #009893 5px),linear-gradient(to right, transparent 0%, transparent 100%);
+    -webkit-mask-image: linear-gradient(to right, rgba(0, 0, 0, 0) 1px, rgb(0, 0, 0) 0%, rgba(0, 0, 0, 0) 100%);
+    mask-image: linear-gradient(to right, rgba(0, 0, 0, 0) 1px, rgb(0, 0, 0) 0%, rgba(0, 0, 0, 0) 100%);
+    content: "";
+    position: absolute;
+    top: 0
+}
+
+.icon-plain {
+    fill: #f0f0f0
+}
+
+.highlight-icon {
+    fill: #55e7b0
+}
+
+.legend-text {
+    fill: #f0f0f0;
+    font-family: "AvenirNextLTProMedium"
+}
+
+#section_pictogram text {
+    color: #fff
+}
+
+#section_pictogram .narration-content {
+    -webkit-box-shadow: none;
+    box-shadow: none
+}
+
+#graph_pictogram {
+    margin: 0 auto
+}
+
+.graph_container .graph_default.graph_shape_shifter,.graph_container.active .graph_default.graph_shape_shifter {
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1
+}
+
+.graph_container .graph_default.graph_shape_shifter .stripe-green-bar:not(:empty):before,.graph_container.active .graph_default.graph_shape_shifter .stripe-green-bar:not(:empty):before {
+    width: 75%;
+    height: 6px;
+    background-image: repeating-linear-gradient(-55deg, transparent, transparent 3px, #009893 3px, #009893 5px),-webkit-gradient(linear, left top, right top, from(transparent), to(transparent));
+    background-image: repeating-linear-gradient(-55deg, transparent, transparent 3px, #009893 3px, #009893 5px),linear-gradient(to right, transparent 0%, transparent 100%);
+    -webkit-mask-image: linear-gradient(to right, rgba(0, 0, 0, 0) 1px, rgb(0, 0, 0) 0%, rgba(0, 0, 0, 0) 100%);
+    mask-image: linear-gradient(to right, rgba(0, 0, 0, 0) 1px, rgb(0, 0, 0) 0%, rgba(0, 0, 0, 0) 100%);
+    content: "";
+    position: absolute;
+    top: 0
+}
+
+.graph_container .graph_default.graph_shape_shifter svg.svg-axes-layer .tick line,.graph_container.active .graph_default.graph_shape_shifter svg.svg-axes-layer .tick line {
+    stroke-width: 1px;
+    stroke-linecap: butt;
+    stroke-dasharray: 0 20px 5px;
+    stroke: dimgray
+}
+
+.graph_container .graph_default.graph_shape_shifter svg.svg-axes-layer .yAxis path.domain,.graph_container .graph_default.graph_shape_shifter svg.svg-axes-layer .xAxis .tick line,.graph_container .graph_default.graph_shape_shifter svg.svg-axes-layer .xAxis path,.graph_container.active .graph_default.graph_shape_shifter svg.svg-axes-layer .yAxis path.domain,.graph_container.active .graph_default.graph_shape_shifter svg.svg-axes-layer .xAxis .tick line,.graph_container.active .graph_default.graph_shape_shifter svg.svg-axes-layer .xAxis path {
+    stroke-width: 0;
+    stroke: rgba(0,0,0,0);
+    display: none
+}
+
+.graph_container .graph_default.graph_shape_shifter svg.svg-axes-layer .tick text,.graph_container.active .graph_default.graph_shape_shifter svg.svg-axes-layer .tick text {
+    font-size: 1.2rem;
+    fill: dimgray
+}
+
+.graph_container .graph_default.graph_shape_shifter div.y-axis-color-scale svg rect,.graph_container.active .graph_default.graph_shape_shifter div.y-axis-color-scale svg rect {
+    stroke-linejoin: round;
+    stroke-width: 1.5px;
+    stroke: dimgray
+}
+
+.graph_container .graph_default.graph_shape_shifter svg.svg-axes-layer text.y-color-scale-label,.graph_container .graph_default.graph_shape_shifter svg.svg-axes-layer .xAxis .tick text,.graph_container.active .graph_default.graph_shape_shifter svg.svg-axes-layer text.y-color-scale-label,.graph_container.active .graph_default.graph_shape_shifter svg.svg-axes-layer .xAxis .tick text {
+    font-weight: 500
+}
+
+.graph_container .graph_default.graph_shape_shifter svg.svg-axes-layer .xAxis .tick text,.graph_container .graph_default.graph_shape_shifter svg.svg-axes-layer text.y-color-scale-label,.graph_container.active .graph_default.graph_shape_shifter svg.svg-axes-layer .xAxis .tick text,.graph_container.active .graph_default.graph_shape_shifter svg.svg-axes-layer text.y-color-scale-label {
+    font-size: 2rem;
+    line-height: 2.1rem;
+    dominant-baseline: middle;
+    fill: #6d6e71;
+    text-align: center;
+    font-weight: 300;
+    font-family: "AvenirNextLTProMedium",sans-serif
+}
+
+.graph_container .graph_default.graph_shape_shifter div.color-scale-wrapper,.graph_container .graph_default.graph_shape_shifter div.bubble-legend-wrapper,.graph_container.active .graph_default.graph_shape_shifter div.color-scale-wrapper,.graph_container.active .graph_default.graph_shape_shifter div.bubble-legend-wrapper {
+    width: 100%;
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-align: end;
+    -ms-flex-align: end;
+    align-items: flex-end
+}
+
+.graph_container .graph_default.graph_shape_shifter div.color-scale-wrapper,.graph_container.active .graph_default.graph_shape_shifter div.color-scale-wrapper {
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start
+}
+
+.graph_container .graph_default.graph_shape_shifter div.bubble-legend-wrapper,.graph_container.active .graph_default.graph_shape_shifter div.bubble-legend-wrapper {
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start
+}
+
+.graph_container .graph_default.graph_shape_shifter div.color-scale,.graph_container .graph_default.graph_shape_shifter div.bubble-legend,.graph_container.active .graph_default.graph_shape_shifter div.color-scale,.graph_container.active .graph_default.graph_shape_shifter div.bubble-legend {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    z-index: 1;
+    padding-left: 6%
+}
+
+.graph_container .graph_default.graph_shape_shifter div.bubble-legend,.graph_container.active .graph_default.graph_shape_shifter div.bubble-legend {
+    margin-bottom: 1%
+}
+
+.graph_container .graph_default.graph_shape_shifter div.color-scale svg text,.graph_container .graph_default.graph_shape_shifter div.bubble-legend svg text,.graph_container.active .graph_default.graph_shape_shifter div.color-scale svg text,.graph_container.active .graph_default.graph_shape_shifter div.bubble-legend svg text {
+    font-size: 1.1rem;
+    alignment-baseline: hanging;
+    text-anchor: middle
+}
+
+.graph_container .graph_default.graph_shape_shifter p.color-scale-label,.graph_container .graph_default.graph_shape_shifter text.bubble-legend-label,.graph_container.active .graph_default.graph_shape_shifter p.color-scale-label,.graph_container.active .graph_default.graph_shape_shifter text.bubble-legend-label {
+    font-size: 1.2rem;
+    color: dimgray
+}
+
+.graph_container .graph_default.graph_shape_shifter text.bubble-legend-label,.graph_container.active .graph_default.graph_shape_shifter text.bubble-legend-label {
+    font-family: "Avenir",sans-serif;
+    font-weight: 900
+}
+
+.graph_container .graph_default.graph_shape_shifter #graph_shape_shifter svg g.xAxis g.tick text,.graph_container.active .graph_default.graph_shape_shifter #graph_shape_shifter svg g.xAxis g.tick text {
+    font-size: 1.8em
+}
+
+#graph_shape_shifter_container.graph_container .graph_caption,#graph_shape_shifter_container.graph_container.active .graph_caption {
+    display: none;
+    height: 0
+}
+
+#graph_shape_shifter {
+    width: 100%;
+    margin: 0
+}
+
+#graph_shape_shifter_container {
+    background-color: #fff
+}
+
+#section_shape_shifter {
+    background-color: #fff;
+    width: 100%
+}
+
+#graph_shape_shifter_container div.background-image-inside-canvas {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-attachment: initial;
+    background-position: center center;
+    background-repeat: no-repeat;
+    -webkit-transition: -webkit-filter 1s;
+    transition: -webkit-filter 1s;
+    transition: filter 1s;
+    transition: filter 1s, -webkit-filter 1s;
+    border-radius: 5px
+}
+
+@media only screen and (min-width: 20em) {
+    #graph_shape_shifter_container div.background-image-inside-canvas {
+        background-image:url(image/U5M_SmilingKids_web_mobile..webp)
+    }
+}
+
+@media only screen and (min-width: 48em) {
+    #graph_shape_shifter_container div.background-image-inside-canvas {
+        background-image:url(image/U5M_SmilingKids_web_medium..webp)
+    }
+}
+
+@media only screen and (min-width: 75em) {
+    #graph_shape_shifter_container div.background-image-inside-canvas {
+        background-image:url(image/U5M_SmilingKids_web_large..webp)
+    }
+}
+
+@media only screen and (min-width: 150em) {
+    #graph_shape_shifter_container div.background-image-inside-canvas {
+        background-image:url(image/U5M_SmilingKids_web_extra_large..webp)
+    }
+}
+
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline
+}
+
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section {
+    display: block
+}
+
+body {
+    line-height: 1
+}
+
+ol,ul {
+    list-style: none
+}
+
+blockquote,q {
+    quotes: none
+}
+
+blockquote:before,blockquote:after,q:before,q:after {
+    content: "";
+    content: none
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0
+}
+
+.stripe-green-bar:not(:empty):before {
+    width: 75%;
+    height: 6px;
+    background-image: repeating-linear-gradient(-55deg, transparent, transparent 3px, #009893 3px, #009893 5px),-webkit-gradient(linear, left top, right top, from(transparent), to(transparent));
+    background-image: repeating-linear-gradient(-55deg, transparent, transparent 3px, #009893 3px, #009893 5px),linear-gradient(to right, transparent 0%, transparent 100%);
+    -webkit-mask-image: linear-gradient(to right, rgba(0, 0, 0, 0) 1px, rgb(0, 0, 0) 0%, rgba(0, 0, 0, 0) 100%);
+    mask-image: linear-gradient(to right, rgba(0, 0, 0, 0) 1px, rgb(0, 0, 0) 0%, rgba(0, 0, 0, 0) 100%);
+    content: "";
+    position: absolute;
+    top: 0
+}
+
+@font-face {
+    font-family: "AvenirNextLTProRegular";
+    src: url(font/AvenirNextLTPro-Regular..woff)
+}
+
+@font-face {
+    font-family: "AvenirNextLTProCondens";
+    src: url(font/AvenirNextLTPro-Cn..woff)
+}
+
+@font-face {
+    font-family: "AvenirNextLTProMedium";
+    src: url(font/AvenirNextLTPro-MediumCn..woff)
+}
+
+@font-face {
+    font-family: "AvenirNextLTProMediumIt";
+    src: url(font/AvenirNextLTPro-MediumIt..woff)
+}
+
+@font-face {
+    font-family: "AvenirNextLTProMediumCn";
+    src: url(font/AvenirNextLTPro-MediumCn..woff)
+}
+
+@font-face {
+    font-family: "AvenirNextLTProBold";
+    src: url(font/AvenirNextLTPro-Bold..woff)
+}
+
+@font-face {
+    font-family: "AvenirNextLTProBold";
+    src: url(font/AvenirNextLTPro-Demi..woff)
+}
+
+html {
+    font-size: 11px
+}
+
+body {
+    font-family: "AvenirNextLTProRegular",sans-serif;
+    font-size: 5rem;
+    font-weight: 300;
+    background-color: rgba(0,0,0,0)
+}
+
+h1 {
+    color: #999;
+    font-family: "AvenirNextLTProRegular",sans-serif;
+    font-size: 1.5rem;
+    font-weight: 400
+}
+
+h2 {
+    font-family: "AvenirNextLTProRegular",sans-serif
+}
+
+h2,a,a:hover {
+    font-size: 1.8rem;
+    line-height: 2.5rem;
+    text-transform: none
+}
+
+@media only screen and (max-width: 20em) {
+    h2,a,a:hover {
+        font-size:1.3rem;
+        line-height: 1.7rem
+    }
+}
+
+h3 {
+    font-size: 1rem;
+    line-height: 1.5rem
+}
+
+p {
+    color: #999;
+    font-family: "AvenirNextLTProRegular",sans-serif;
+    font-weight: 300;
+    font-size: 1rem;
+    line-height: 1.5rem
+}
+
+strong,b,a,a:hover {
+    font-family: "Avenir",sans-serif;
+    font-weight: bold
+}
+
+a,a:hover {
+    text-decoration-color: #72bb99;
+    color: #72bb99;
+    display: inline
+}
+
+a:hover {
+    text-decoration: blink
+}
+
+em,i {
+    font-style: italic
+}
+
+.boldUppercaseNegativeColor {
+    color: rgba(0,0,0,0);
+    background-color: #72bb99;
+    font-weight: bold;
+    text-transform: uppercase
+}
+
+.stripe-green-bar:not(:empty):before {
+    width: 75%;
+    height: 6px;
+    background-image: repeating-linear-gradient(-55deg, transparent, transparent 3px, #009893 3px, #009893 5px),-webkit-gradient(linear, left top, right top, from(transparent), to(transparent));
+    background-image: repeating-linear-gradient(-55deg, transparent, transparent 3px, #009893 3px, #009893 5px),linear-gradient(to right, transparent 0%, transparent 100%);
+    -webkit-mask-image: linear-gradient(to right, rgba(0, 0, 0, 0) 1px, rgb(0, 0, 0) 0%, rgba(0, 0, 0, 0) 100%);
+    mask-image: linear-gradient(to right, rgba(0, 0, 0, 0) 1px, rgb(0, 0, 0) 0%, rgba(0, 0, 0, 0) 100%);
+    content: "";
+    position: absolute;
+    top: 0
+}
+
+.facebook::before {
+    font-family: "FontAwesome";
+    font-weight: 400;
+    color: gray
+}
+
+.twitter::before {
+    font-family: "FontAwesome";
+    font-weight: 400
+}
+
+#icon-wrapper {
+    width: 100%
+}
+
+.icon-group {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center
+}
+
+.icon {
+    cursor: pointer;
+    padding: 5px;
+    margin: 10px 20px
+}
+
+.icon i {
+    color: gray
+}
+
+.icon:hover i {
+    color: #72bb99
+}
+
+.stripe-green-bar:not(:empty):before {
+    width: 75%;
+    height: 6px;
+    background-image: repeating-linear-gradient(-55deg, transparent, transparent 3px, #009893 3px, #009893 5px),-webkit-gradient(linear, left top, right top, from(transparent), to(transparent));
+    background-image: repeating-linear-gradient(-55deg, transparent, transparent 3px, #009893 3px, #009893 5px),linear-gradient(to right, transparent 0%, transparent 100%);
+    -webkit-mask-image: linear-gradient(to right, rgba(0, 0, 0, 0) 1px, rgb(0, 0, 0) 0%, rgba(0, 0, 0, 0) 100%);
+    mask-image: linear-gradient(to right, rgba(0, 0, 0, 0) 1px, rgb(0, 0, 0) 0%, rgba(0, 0, 0, 0) 100%);
+    content: "";
+    position: absolute;
+    top: 0
+}
+
+html {
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%
+}
+
+* {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box
+}
+
+#app-img {
+    position: fixed;
+    width: 100%;
+    height: 120vh;
+    margin: 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    -webkit-transition: -webkit-filter 1.35s ease;
+    transition: -webkit-filter 1.35s ease;
+    transition: filter 1.35s ease;
+    transition: filter 1.35s ease, -webkit-filter 1.35s ease;
+    opacity: 0;
+    top: 3.8rem;
+    z-index: -1;
+    -webkit-animation-name: fadeIn;
+    animation-name: fadeIn;
+    -webkit-animation-iteration-count: 1;
+    animation-iteration-count: 1;
+    -webkit-animation-timing-function: ease-in-out;
+    animation-timing-function: ease-in-out;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards
+}
+
+@supports(--css: variables) {
+    #app-img {
+        height:calc(var(--vh, 1vh)*120)
+    }
+}
+
+@-webkit-keyframes fadeIn {
+    0% {
+        opacity: 0
+    }
+
+    100% {
+        opacity: 1
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0
+    }
+
+    100% {
+        opacity: 1
+    }
+}
+
+@media only screen and (max-width: 20em) {
+    #app-img {
+        background-image:url(image/ChildrenHands_mobile..webp)
+    }
+}
+
+@media only screen and (min-width: 20em)and (max-width: 48em) {
+    #app-img {
+        background-image:url(image/ChildrenHands_medium..webp)
+    }
+}
+
+@media only screen and (min-width: 48em)and (max-width: 75em) {
+    #app-img {
+        background-image:url(image/ChildrenHands_large..webp)
+    }
+}
+
+@media only screen and (min-width: 75em) {
+    #app-img {
+        background-image:url(image/ChildrenHands_extra_large..webp)
+    }
+}
+
+.landing-page,.landing-page-inner,.closing-page,.closing-page-inner {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center
+}
+
+.landing-page {
+    height: calc(100vh - 3.8rem)
+}
+
+@supports(--css: variables) {
+    .landing-page {
+        height:calc(var(--vh, 1vh) * 100 - 3.8rem)
+    }
+}
+
+.closing-page {
+    height: calc(100vh - 3.8rem - 2rem)
+}
+
+@supports(--css: variables) {
+    .closing-page {
+        height:calc(var(--vh, 1vh) * 100 - 3.8rem - 2rem)
+    }
+}
+
+.landing-page-inner,.closing-page-inner {
+    position: relative;
+    width: 75%;
+    height: 80%
+}
+
+.hidden {
+    display: none
+}
+
+#scroll-down-wrapper {
+    z-index: 999;
+    position: absolute;
+    top: 80vh;
+    left: 50%;
+    text-align: center;
+    -webkit-transform: translate(-50%, 0%);
+    transform: translate(-50%, 0%)
+}
+
+@supports(--css: variables) {
+    #scroll-down-wrapper {
+        top:calc(var(--vh, 1vh)*80)
+    }
+}
+
+#scroll-down-icon {
+    border-radius: 4px;
+    border-bottom: 4px solid #fff;
+    border-right: 4px solid #fff;
+    display: inline-block;
+    height: 30px;
+    text-align: center;
+    font-size: 30px;
+    text-decoration: none;
+    width: 30px;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+    -webkit-animation: fade_move_down 2s ease-in-out infinite;
+    animation: fade_move_down 2s ease-in-out infinite
+}
+
+#scroll-down-title {
+    color: #fff;
+    font-size: 1.8rem;
+    margin: 0;
+    padding: 0
+}
+
+#loading-icon {
+    z-index: 1000;
+    position: fixed;
+    top: 85vh;
+    left: calc(50% - 25px);
+    border-bottom: 6px solid #cdcdcd;
+    border-left: 6px solid #cdcdcd;
+    border-right: 6px solid #cdcdcd;
+    border-top: 6px solid #979797;
+    border-radius: 100%;
+    height: 50px;
+    width: 50px;
+    -webkit-animation: spin .7s infinite linear;
+    animation: spin .7s infinite linear
+}
+
+@supports(--css: variables) {
+    #loading-icon {
+        top:calc(var(--vh, 1vh)*85)
+    }
+}
+
+@-webkit-keyframes spin {
+    from {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg)
+    }
+
+    to {
+        -webkit-transform: rotate(359deg);
+        transform: rotate(359deg)
+    }
+}
+
+@keyframes spin {
+    from {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg)
+    }
+
+    to {
+        -webkit-transform: rotate(359deg);
+        transform: rotate(359deg)
+    }
+}
+
+@-webkit-keyframes fade_move_down {
+    0% {
+        -webkit-transform: translate(0, -10px) rotate(45deg);
+        transform: translate(0, -10px) rotate(45deg);
+        opacity: 0
+    }
+
+    50% {
+        opacity: 1
+    }
+
+    100% {
+        -webkit-transform: translate(0, 10px) rotate(45deg);
+        transform: translate(0, 10px) rotate(45deg);
+        opacity: 0
+    }
+}
+
+@keyframes fade_move_down {
+    0% {
+        -webkit-transform: translate(0, -10px) rotate(45deg);
+        transform: translate(0, -10px) rotate(45deg);
+        opacity: 0
+    }
+
+    50% {
+        opacity: 1
+    }
+
+    100% {
+        -webkit-transform: translate(0, 10px) rotate(45deg);
+        transform: translate(0, 10px) rotate(45deg);
+        opacity: 0
+    }
+}
+
+.common-animation,.landing-page-inner .title-bar,.landing-page-inner .title,.landing-page-inner .subtitle {
+    -webkit-animation-iteration-count: 1;
+    animation-iteration-count: 1;
+    -webkit-animation-timing-function: ease-in-out;
+    animation-timing-function: ease-in-out;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards
+}
+
+.landing-page-inner .title p {
+    padding: 0
+}
+
+.landing-page-inner .title,.landing-page-inner .subtitle {
+    text-align: center;
+    color: #fff;
+    -webkit-animation-name: fadeInTextShadow;
+    animation-name: fadeInTextShadow
+}
+
+@-webkit-keyframes fadeInTextShadow {
+    0% {
+        text-shadow: 0 0 0 #fff
+    }
+
+    100% {
+        text-shadow: .5px .5px 4px #281612
+    }
+}
+
+@keyframes fadeInTextShadow {
+    0% {
+        text-shadow: 0 0 0 #fff
+    }
+
+    100% {
+        text-shadow: .5px .5px 4px #281612
+    }
+}
+
+.landing-page-inner .title {
+    font-size: 6rem;
+    font-weight: 500;
+    line-height: 7.2rem
+}
+
+.landing-page-inner .title-bar {
+    background-color: #55e7b0;
+    border: 0;
+    height: 5px;
+    width: 60%;
+    margin: 5%;
+    opacity: 0;
+    -webkit-animation-name: fadeInOpacity;
+    animation-name: fadeInOpacity
+}
+
+@-webkit-keyframes fadeInOpacity {
+    0% {
+        opacity: 0
+    }
+
+    100% {
+        opacity: 1
+    }
+}
+
+@keyframes fadeInOpacity {
+    0% {
+        opacity: 0
+    }
+
+    100% {
+        opacity: 1
+    }
+}
+
+.landing-page-inner .subtitle {
+    font-size: 3rem;
+    font-weight: 400;
+    line-height: 3.2rem
+}
+
+@media only screen and (max-width: 75em) {
+    .landing-page-inner .title {
+        font-size:4rem;
+        line-height: 4.8rem
+    }
+
+    .landing-page-inner .subtitle {
+        font-size: 2rem;
+        line-height: 2.6rem
+    }
+}
+
+.closing-page {
+    background-color: #fff
+}
+
+.closing-page-inner {
+    width: 80%;
+    max-width: 700px
+}
+
+.closing-page p,.closing-page-button {
+    color: #012b53
+}
+
+.closing-page p,#closing-message .closing-link,#closing-click-box #closing-page-button,#closing-click-box #closing-page-button:hover {
+    font-size: 2.8rem;
+    line-height: 3.9rem
+}
+
+@media only screen and (max-width: 48em) {
+    .closing-page p,#closing-message .closing-link,#closing-click-box #closing-page-button,#closing-click-box #closing-page-button:hover {
+        font-size:1.7rem;
+        line-height: 2.7rem
+    }
+}
+
+@media only screen and (max-width: 20em) {
+    .closing-page p,#closing-message .closing-link,#closing-click-box #closing-page-button,#closing-click-box #closing-page-button:hover {
+        font-size:1.6rem;
+        line-height: 2.5rem;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center
+    }
+}
+
+#closing-click-box {
+    margin: 3rem
+}
+
+#closing-click-box #closing-page-button,#closing-click-box #closing-page-button:hover {
+    background-color: #72bb99;
+    -webkit-box-shadow: 0 1px 3px #999;
+    box-shadow: 0 1px 3px #999;
+    color: #fff;
+    font-weight: 500;
+    margin: 2rem;
+    padding: 1rem;
+    position: relative;
+    text-decoration: none;
+    -webkit-transition: .4s;
+    transition: .4s
+}
+
+#closing-click-box #closing-page-button:hover {
+    -webkit-box-shadow: 0 2px 5px #999;
+    box-shadow: 0 2px 5px #999;
+    -webkit-transition: .4s;
+    transition: .4s;
+    top: -2.5px;
+    position: relative
+}
+
+@media only screen and (max-width: 48em) {
+    #closing-click-box #closing-page-button,#closing-click-box #closing-page-button:hover {
+        margin:1rem
+    }
+}
+
+.header,.footer {
+    z-index: 10;
+    width: 100%;
+    height: 3.8rem;
+    background-color: #fff;
+    -webkit-box-shadow: 0 4px 51px -13px rgba(0,0,0,.18);
+    box-shadow: 0 4px 51px -13px rgba(0,0,0,.18)
+}
+
+.header {
+    position: fixed;
+    top: 0
+}
+
+.header-content,.footer-content {
+    width: 100%;
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    justify-items: center
+}
+
+.ihme-logo-area {
+    padding-left: 10px;
+    padding-bottom: .2%
+}
+
+.ihme-globe {
+    vertical-align: middle;
+    height: calc(3.8rem * 0.45);
+    width: auto;
+    padding-right: 10px;
+    display: block;
+    border-right: 1px solid #ccc
+}
+
+.header-title {
+    position: relative;
+    top: 1px
+}
+
+#footer-content-right {
+    min-height: calc(2rem - 2px);
+    text-align: center
+}
+
+#footer-content-right span {
+    display: inline-block;
+    vertical-align: middle
+}
+
+#banner-logo {
+    height: calc(2rem - 4px);
+    padding-left: 8px
+}
+
+#footer-copyright,#footer-link {
+    font-size: 1.1em;
+    font-weight: 400
+}
+
+.title-area {
+    width: 100%;
+    padding-left: 10px;
+    vertical-align: middle
+}
+
+.header-right-area {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 0;
+    padding-right: 1vw
+}
+
+.header-right-area a {
+    display: none
+}
+
+.footer#footer {
+    position: relative;
+    height: 2rem;
+    bottom: 0;
+    -webkit-box-shadow: 0px -4px 51px 0px rgba(0,0,0,.18);
+    box-shadow: 0px -4px 51px 0px rgba(0,0,0,.18)
+}
+
+.footer-content {
+    vertical-align: middle
+}
+
+.footer a,.footer a:link,.footer a:visited,.footer a:hover,.footer a:active {
+    text-decoration: none;
+    color: #999;
+    display: inherit;
+    line-height: 2rem
+}
+
+.footer-content-left,.footer-content-center,.footer-content-right {
+    font-size: 10px;
+    margin: 0 3%
+}
+
+.footer-content-left span,.footer-content-right span {
+    color: #999
+}
+
+.footer-content-left {
+    display: none
+}
+
+#app {
+    position: relative;
+    background-color: rgba(0,0,0,0)
+}
+
+.app-container {
+    width: 100%;
+    margin: 3.8rem 0 0 0;
+    -ms-scroll-chaining: none;
+    overscroll-behavior: none
+}
 
 .scroll-area {
     background-color: rgba(0,0,0,0)
@@ -204,4 +1441,224 @@ h1, h2 {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex
+}
+
+.flex_vertical_column_centered,.graph_container .graph_default,.graph_container.active .graph_default,.graph_container,.graph_container.active {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-line-pack: justify;
+    align-content: space-between
+}
+
+.graph_container .graph_title,.graph_container.active .graph_title,.graph_container .graph_caption,.graph_container.active .graph_caption {
+    display: none;
+    height: 0;
+    margin: 0
+}
+
+.graph_container,.graph_container.active {
+    opacity: 1;
+    top: 3.8rem;
+    height: calc(100vh - 3.8rem);
+    position: fixed;
+    position: sticky;
+    padding: 0;
+    margin: 0;
+    overflow: hidden
+}
+
+@supports(--css: variables) {
+    .graph_container,.graph_container.active {
+        height:calc(var(--vh, 1vh) * 100 - 3.8rem)
+    }
+}
+
+.graph_container .graph_caption,.graph_container.active .graph_caption {
+    color: #6d6e71;
+    text-align: center;
+    font-family: "AvenirNextMedium";
+    text-transform: none;
+    font-weight: 700;
+    letter-spacing: .01em
+}
+
+.graph_container .graph_caption span,.graph_container.active .graph_caption span {
+    display: inline-block
+}
+
+.graph_container .graph_caption,.graph_container.active .graph_caption {
+    font-family: "AvenirNextRegular";
+    letter-spacing: .03em;
+    text-transform: none;
+    font-size: .9rem;
+    line-height: 1.1rem;
+    height: 1.5rem;
+    margin: .5% 5% .5% 5%
+}
+
+.graph_container .graph_default,.graph_container.active .graph_default {
+    position: relative;
+    width: 100%;
+    -webkit-box-flex: .9;
+    -ms-flex: .9;
+    flex: .9
+}
+
+.graph_container .graph_default svg,.graph_container.active .graph_default svg {
+    overflow: hidden
+}
+
+.graph_container .graph_default svg .axis text,.graph_container .graph_default svg .legendItem text,.graph_container.active .graph_default svg .axis text,.graph_container.active .graph_default svg .legendItem text {
+    fill: #999a9d;
+    stroke: none;
+    font-weight: 400;
+    font-size: .9rem
+}
+
+.graph_container .graph_default svg .axis .tick,.graph_container .graph_default svg .axis .tick line,.graph_container .graph_default svg .legendItem .tick,.graph_container .graph_default svg .legendItem .tick line,.graph_container.active .graph_default svg .axis .tick,.graph_container.active .graph_default svg .axis .tick line,.graph_container.active .graph_default svg .legendItem .tick,.graph_container.active .graph_default svg .legendItem .tick line {
+    fill: none;
+    stroke: none
+}
+
+.graph_container .graph_default svg .axis path,.graph_container .graph_default svg .legendItem path,.graph_container.active .graph_default svg .axis path,.graph_container.active .graph_default svg .legendItem path {
+    fill: none;
+    stroke: none
+}
+
+@media only screen and (min-width: 75em) {
+    #app-img {
+        height:120vh
+    }
+
+    @supports(--css: variables) {
+        #app-img {
+            height:calc(var(--vh, 1vh)*120)
+        }
+    }
+
+    .landing-page {
+        height: calc(100vh - 4.8rem);
+        margin-top: 4.8rem;
+        margin-bottom: 2rem
+    }
+
+    @supports(--css: variables) {
+        .landing-page {
+            height:calc(var(--vh, 1vh) * 100 - 4.8rem)
+        }
+    }
+
+    .header {
+        height: 4.8rem
+    }
+
+    .header-content,.footer-content {
+        max-width: 22em
+    }
+
+    .ihme-logo-area {
+        padding-left: 15px
+    }
+
+    .ihme-globe {
+        vertical-align: middle;
+        width: auto;
+        padding-right: 15px;
+        height: calc(4.8rem * 0.45)
+    }
+
+    .title-area {
+        width: 100%;
+        padding-left: 15px;
+        vertical-align: middle
+    }
+
+    .header-right-area {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        justify-self: flex-end;
+        padding-right: 1vw;
+        width: auto
+    }
+
+    .header-right-area a {
+        display: block;
+        white-space: nowrap;
+        margin-right: 15px;
+        color: #999;
+        font-family: Avenir;
+        font-size: 1.3rem;
+        font-weight: 500;
+        text-transform: uppercase;
+        text-decoration: none;
+        -webkit-transition: all 500ms ease;
+        transition: all 500ms ease
+    }
+
+    .header-right-area a:hover {
+        color: #72bb99
+    }
+
+    .footer {
+        height: 2rem
+    }
+
+    .footer-content-left {
+        display: unset;
+        line-height: 2rem
+    }
+
+    #footer-content-right {
+        min-height: calc(2rem - 2px)
+    }
+
+    #banner-logo {
+        height: calc(2rem - 4px)
+    }
+
+    .app-container {
+        margin: 4.8rem 0 0 0
+    }
+
+    .section {
+        width: 100%
+    }
+
+    .graph_container,.graph_container.active {
+        max-width: 22em;
+        margin: 0 auto 0 auto;
+        top: calc(4.8rem - 1px);
+        height: calc(100vh - 4.8rem)
+    }
+
+    @supports(--css: variables) {
+        .graph_container,.graph_container.active {
+            height:calc(var(--vh, 1vh) * 100 - 4.8rem)
+        }
+    }
+
+    .graph_container .graph_default,.graph_container .graph_default active,.graph_container.active .graph_default,.graph_container.active .graph_default active {
+        margin: 0 20% 0 3%;
+        width: 80%
+    }
+
+    .narration_list {
+        top: 4.8rem;
+        margin-left: 55%
+    }
 }
